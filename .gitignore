@@ -1,0 +1,39 @@
+
+@'
+# Maven 构建文件
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# 编译文件
+*.class
+
+# 打包文件
+*.jar
+*.war
+*.ear
+*.nar
+
+# 日志文件
+logs/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+
+# 数据库文件
+*.db
+*.sqlite
+
+# 覆盖报告
+jacoco/
+coverage/
+'@ | Set-Content -Path ".gitignore" -Encoding UTF8
+
